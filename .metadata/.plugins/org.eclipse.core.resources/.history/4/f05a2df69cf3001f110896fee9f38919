@@ -18,10 +18,6 @@ public class Usuario {
 		System.out.println("Estado da TV: " + smartTv.ligada);
 		System.out.println("Volume atual: " + smartTv.volume);
 		System.out.println("Canal atual: " + smartTv.canal);
-		
-		System.out.println(" ");
-		Calculadora cal = new Calculadora();
-		System.out.println(cal.somar(5, 845));
 
 	}
 
