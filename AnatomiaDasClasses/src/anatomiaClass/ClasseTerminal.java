@@ -1,5 +1,6 @@
 package anatomiaClass;
 
+import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -10,7 +11,7 @@ public class ClasseTerminal {
 		/*String nome = args[0];
 		int idade = Integer.valueOf(args[1]);
 		double altura = Double.valueOf(args[2]);*/
-		
+		try {
 		//Utilização do metodo Scanner
 		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 		
@@ -28,6 +29,10 @@ public class ClasseTerminal {
 		System.out.println("Olá, eu sou " + nome);
 		System.out.println("Tenho " + idade + " anos");
 		System.out.println("Minha altura é " + altura + " cm.");
+		}
+		catch(InputMismatchException e) {
+			System.out.println("Os campos idade e altura devem ser numéricos.");
+		}
 	}
 
 }
